@@ -1,0 +1,6 @@
+create database banking;
+use banking;
+create table history(pin int not null,account_no long not null, operation varchar(30) not null,amount long not null,balance long not null,date_time varchar(100));
+create table signup1(pin int not null primary key,name varchar(50) not null,fname varchar(50) not null, city varchar(50), state varchar(50), zip varchar(50), passsword varchar(50), birth varchar(50), email varchar(50)); 
+create table signup2(pin int not null primary key,religion varchar(50),catogery varchar(50), education varchar(50)); 
+create table signup3(pin int not null primary key,account_no long,account_type varchar(50),balance long);
